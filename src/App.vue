@@ -44,7 +44,6 @@
 import HelloWorld from './components/HelloWorld.vue'
 import PostsExample from './components/posts.vue'
 
-
 export default {
   name: 'App',
   components: {

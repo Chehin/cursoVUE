@@ -24,6 +24,9 @@
 </template>
 
 <script>
+
+import axios from './axios'
+
 export default{
     name: 'PostExample',
     data() {
@@ -36,6 +39,14 @@ export default{
                 {id: 5, title: 'Post 5',body: 'body 5'},
             ]
         }
+    },
+
+    created(){
+      console.log('Mensaje prueba');
+
+      axios.get('https://jsonplaceholder.typicode.com/todos/1').then( resp => {
+        console.log(resp);
+      });
     }
 
 }
